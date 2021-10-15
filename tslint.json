@@ -1,0 +1,29 @@
+{
+  "extends": [
+    "tslint:recommended",
+    "tslint-config-prettier",
+    "tslint-plugin-prettier"
+  ],
+  "rules": {
+    "ordered-imports": false,
+    "member-access": false,
+    "no-string-literal": false,
+    "curly": false,
+    "arrow-return-shorthand": false,
+    "object-literal-sort-keys": false,
+    "no-unused-expression": false,
+    "no-submodule-imports": false,
+    "no-var-requires": false,
+    "comment-format": false,
+    "no-console": false,
+    "member-ordering": false,
+    "no-empty-interface": false,
+    "max-classes-per-file": false,
+    "jsx-no-lambda": false,
+    "jsx-no-multiline-js": false,
+    "jsx-boolean-value": [true, "never"]
+  },
+  "linterOptions": {
+    "exclude": ["vendor/*.ts", "**/__mocks__/*.ts"]
+  }
+}
