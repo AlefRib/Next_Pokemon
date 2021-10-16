@@ -16,27 +16,20 @@
     "skipLibCheck": true,
     "importHelpers": true,
     "allowSyntheticDefaultImports": true,
-    "lib": [
-      "dom",
-      "esnext"
-    ],
-    "types": [
-      "react",
-      "node"
-    ],
-    "baseUrl": ".",
+    "lib": ["dom", "esnext"],
+    "types": ["react", "node"],
     "forceConsistentCasingInFileNames": true,
     "noEmit": true,
     "esModuleInterop": true,
     "resolveJsonModule": true,
-    "isolatedModules": true
+    "isolatedModules": true,
+    "baseUrl": ".",
+    "paths": {
+      "@Services": ["./services/base"],
+      "@Styles": ["./styles"],
+      "tslib": ["path/to/node_modules/tslib/tslib.d.ts"]
+    }
   },
-  "exclude": [
-    "node_modules"
-  ],
-  "include": [
-    "next-env.d.ts",
-    "**/*.ts",
-    "**/*.tsx"
-  ]
+  "exclude": ["node_modules"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "pages/_app.js", "pages/index.tsx"]
 }

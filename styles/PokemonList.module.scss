@@ -1,0 +1,22 @@
+.List_container {
+  display: flex;
+  padding: 30px;
+  flex-wrap: wrap;
+
+  .List_card {
+    width: 150px;
+    height: 220px;
+    margin: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 15px;
+    background-color: #fff;
+    align-items: center;
+    border-radius: 4px;
+
+    img {
+      width: 150px;
+    }
+  }
+}
